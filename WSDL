@@ -1,0 +1,27 @@
+POST /service/admin/soap/Services.wsdl HTTP/1.1
+Host: 192.168.88.192:7071
+Connection: close
+Content-Length: 317
+Origin: https://192.168.88.192:7071
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Content-Type: application/soap+xml; charset=UTF-8
+Accept: */*
+Referer: https://192.168.88.192:7071/zimbraAdmin/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: ZM_TEST=true; tinymcePasteText=1;
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">  
+  <soap:Header>
+    <context xmlns="urn:zimbra">  
+      <userAgent name="ZimbraWebClient - GC71 (Win)"/>  
+      <session id="3213"/>  
+      <format type="js"/> 
+    </context> 
+  </soap:Header>  
+  <soap:Body> 
+    <GetAdminExtensionZimletsRequest xmlns="urn:zimbraAdmin"></GetAdminExtensionZimletsRequest> 
+  </soap:Body> 
+</soap:Envelope>
